@@ -1,0 +1,32 @@
+export interface Experience {
+  title: string;
+  company: string;
+  description: string;
+  certificateUrl?: string;
+}
+
+export interface Project {
+  title: string;
+  description: string;
+  githubUrl: string;
+  technologies: string[];
+  image?: string;
+}
+
+export interface Skill {
+  category: string;
+  icon: string;
+  skills: string[];
+}
+
+export interface Achievement {
+  title: string;
+  position: string;
+  icon: string;
+}
+
+export interface SocialLink {
+  platform: string;
+  url: string;
+  icon: string;
+}
