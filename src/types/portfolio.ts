@@ -1,8 +1,9 @@
 export interface Experience {
   title: string;
   company: string;
-  description: string;
-  certificateUrl?: string;
+  duration: string;
+  icon: string;
+  bullets: string[];
 }
 
 export interface Project {
@@ -29,4 +30,12 @@ export interface SocialLink {
   platform: string;
   url: string;
   icon: string;
+}
+
+export interface Certification {
+  title: string;
+  org: string;
+  url?: string;
+  image?: string;
+  type: 'link' | 'image' | 'name';
 }

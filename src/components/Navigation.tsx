@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
-const Navigation: React.FC = () => {
+interface NavigationProps {
+  onResumeClick?: () => void;
+}
+
+const Navigation: React.FC<NavigationProps> = ({ onResumeClick }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 
@@ -77,8 +81,8 @@ const Navigation: React.FC = () => {
               ))}
             </div>
             <a
-              href="/resume.pdf"
-              download
+              href="#"
+              onClick={e => { e.preventDefault(); onResumeClick && onResumeClick(); }}
               className="ml-4 px-5 py-2 rounded-full font-semibold border-2 border-cyan-400 bg-gradient-to-r from-cyan-400 to-blue-500 text-white shadow-cyan-400/30 shadow-md transition-all duration-300 hover:from-blue-400 hover:to-cyan-400 hover:text-black hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-cyan-400"
               target="_blank"
               rel="noopener noreferrer"
@@ -109,8 +113,8 @@ const Navigation: React.FC = () => {
               </button>
             ))}
             <a
-              href="/resume.pdf"
-              download
+              href="#"
+              onClick={e => { e.preventDefault(); onResumeClick && onResumeClick(); }}
               className="w-full mt-2 px-6 py-2 rounded-full font-semibold border-2 border-cyan-400 bg-gradient-to-r from-cyan-400 to-blue-500 text-white shadow-cyan-400/30 shadow-md transition-all duration-300 hover:from-blue-400 hover:to-cyan-400 hover:text-black hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 text-center"
               target="_blank"
               rel="noopener noreferrer"
