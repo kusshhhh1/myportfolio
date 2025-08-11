@@ -22,16 +22,17 @@ const Projects: React.FC = () => {
   return (
     <SectionWrapper id="projects" className="w-full flex flex-col items-center space-y-12 px-2 sm:px-4 py-20 bg-transparent">
       <AnimatedHeading>Projects</AnimatedHeading>
-      {projects.map((project, i) => (
-        <motion.div
-          key={project.title}
-          className="w-full max-w-full sm:max-w-3xl bg-white/5 backdrop-blur-sm rounded-2xl shadow-lg border border-white/10 p-4 sm:p-6 flex flex-col items-center space-y-6 relative group hover:shadow-cyan-400/25 transition-shadow duration-300"
-          custom={i}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={cardStagger}
-        >
+      <div className="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+        {projects.map((project, i) => (
+          <motion.div
+            key={project.title}
+            className="w-full bg-white/5 backdrop-blur-sm rounded-2xl shadow-lg border border-white/10 p-4 sm:p-6 flex flex-col items-center space-y-6 relative group hover:shadow-cyan-400/25 transition-shadow duration-300"
+            custom={i}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={cardStagger}
+          >
           <motion.img
             src={project.image}
             alt={project.title}
@@ -65,7 +66,8 @@ const Projects: React.FC = () => {
             </div>
           </div>
         </motion.div>
-      ))}
+        ))}
+      </div>
     </SectionWrapper>
   );
 };

@@ -14,8 +14,8 @@ const cardData = [
         <div className="text-gray-400 text-sm mt-1">Completed Schooling from Hartmann College Bareilly</div>
       </>
     ),
-    color: 'from-cyan-400 to-blue-500',
-    hover: 'from-blue-500 to-purple-500',
+    color: 'from-slate-800 to-slate-700',
+    hover: 'from-slate-700 to-slate-600',
   },
   {
     icon: <Briefcase className="text-cyan-400 group-hover:text-white transition-colors duration-300" size={32} />,
@@ -26,8 +26,8 @@ const cardData = [
         <div className="text-gray-400 text-sm mt-1">Working with Python, Flask, Web & API development</div>
       </>
     ),
-    color: 'from-cyan-400 to-purple-400',
-    hover: 'from-purple-500 to-blue-500',
+    color: 'from-gray-800 to-gray-700',
+    hover: 'from-gray-700 to-gray-600',
   },
   {
     icon: <Music className="text-cyan-400 group-hover:text-white transition-colors duration-300" size={32} />,
@@ -38,8 +38,8 @@ const cardData = [
         <div className="text-gray-400 text-sm mt-1">Organizing college events, mentoring juniors, and promoting creativity across campus</div>
       </>
     ),
-    color: 'from-cyan-400 to-pink-400',
-    hover: 'from-pink-500 to-cyan-400',
+    color: 'from-zinc-800 to-zinc-700',
+    hover: 'from-zinc-700 to-zinc-600',
   },
 ];
 

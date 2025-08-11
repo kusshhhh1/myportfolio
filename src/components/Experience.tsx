@@ -3,12 +3,12 @@ import { motion, easeInOut } from 'framer-motion';
 import { experiences } from '../data/portfolio';
 import { SectionWrapper } from './SectionWrapper';
 import { AnimatedHeading } from './AnimatedHeading';
-import { SiPython, SiPandas } from 'react-icons/si';
+import { SiPython, SiPandas, SiHtml5, SiCss3, SiJavascript } from 'react-icons/si';
 import { FaRobot, FaMusic } from 'react-icons/fa';
 
 const iconMap: Record<string, JSX.Element> = {
   python: <SiPython className="text-yellow-400" size={28} />, // LinuxWorld
-  datascience: <SiPandas className="text-gray-200" size={28} />, // DigiAM
+  webdev: <SiHtml5 className="text-orange-400" size={28} />, // DigiAM
   ml: <FaRobot className="text-cyan-400" size={28} />, // Pinnacle Labs
   music: <FaMusic className="text-pink-400" size={28} />,
 };

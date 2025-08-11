@@ -39,3 +39,10 @@ export interface Certification {
   image?: string;
   type: 'link' | 'image' | 'name';
 }
+
+export interface CaseStudy {
+  title: string;
+  description: string;
+  linkedinUrl: string;
+  category: string;
+}
